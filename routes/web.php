@@ -17,7 +17,8 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    $posts = Post::all();
+    $posts = auth()->user()->userPosts()->latest()->get(); // user specific posts
+    // $posts = Post::all(); //brings out all the posts
     return view('home', ['posts' => $posts]);
 });
 
