@@ -7,7 +7,6 @@
 </head>
 
 <body>
-
     @auth
     <p>Congrats you are logged in!</p>
     <form method="post" action="/logout">
@@ -43,7 +42,6 @@
         
     </div>
 
-
     @else
     <div style="border: 3px solid black;">
         <h2>Register</h2>
@@ -64,12 +62,7 @@
             <button>Login</button>
         </form>
     </div>
-
     @endauth
-
-
-
-    
 </body>
 
 </html>
