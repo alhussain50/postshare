@@ -10,11 +10,13 @@
 <body>
     @auth
     <div class="dashboard">
-        <p>Congrats you are logged in!</p>
-        <form method="post" action="/logout">
-            @csrf
-            <button>Log out</button>
-        </form>
+        <div class="login-status">
+            <p>Congrats you are logged in!</p>
+            <form method="post" action="/logout">
+                @csrf
+                <button>Log out</button>
+            </form>
+        </div>
 
         <div class="post-form">
             <h2>Create a new post</h2>

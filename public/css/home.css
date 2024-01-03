@@ -6,8 +6,40 @@ body {
 
 .dashboard {
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 75px 100px 75px 100px;
 }
+
+.login-status {
+    background-color: #fff; /* Change to your preferred color */
+    color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login-status p {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.login-status button {
+    background-color: #4caf50;
+    color: #fff; /* Change to your preferred color */
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-status button:hover {
+    background-color: #218838; /* Change to your preferred color */
+    color: #fff; /* Change to your preferred color */
+}
+
 
 .post-form,
 .post-list {
@@ -51,31 +83,47 @@ body {
     background-color: #0056b3;
 }
 
-.post-list .post-item h3 {
-    margin-bottom: 5px;
+.post-list h2 {
+    margin-bottom: 20px;
     color: #333;
 }
 
-.post-list .post-item {
+.post-item {
     background-color: #f9f9f9;
-    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
     margin: 15px 0;
+    transition: box-shadow 0.3s;
 }
 
-.post-list .post-item p {
-    margin-bottom: 10px;
+.post-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.post-list .post-item .post-actions {
-    margin-top: 10px;
+.post-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
 }
 
-.post-list .post-item .post-actions a,
-.post-list .post-item .post-actions button {
+.post-item p {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+}
+
+.post-actions a,
+.post-actions button {
     background-color: #28a745;
     color: #fff;
     border: none;
-    padding: 8px 16px;
+    padding: 10px 16px;
     cursor: pointer;
     border-radius: 4px;
     margin-right: 10px;
@@ -83,8 +131,8 @@ body {
     transition: background-color 0.3s;
 }
 
-.post-list .post-item .post-actions a:hover,
-.post-list .post-item .post-actions button:hover {
+.post-actions a:hover,
+.post-actions button:hover {
     background-color: #218838;
 }
 
